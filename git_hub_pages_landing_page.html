@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positivus – Digital Marketing Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#b9ff66;
+      --dark:#111;
+      --gray:#f4f4f4;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Inter',sans-serif;
+      color:#000;
+      background:#fff;
+      line-height:1.6;
+    }
+    header{
+      padding:24px 64px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    nav a{
+      margin-left:24px;
+      text-decoration:none;
+      color:#000;
+      font-weight:500;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      padding:64px;
+      align-items:center;
+    }
+    .hero h1{
+      font-size:48px;
+      line-height:1.2;
+      margin-bottom:24px;
+    }
+    .btn{
+      display:inline-block;
+      background:#000;
+      color:#fff;
+      padding:14px 24px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .services{
+      background:#fff;
+      padding:64px;
+    }
+    .services h2{
+      font-size:32px;
+      margin-bottom:32px;
+    }
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:24px;
+    }
+    .card{
+      padding:24px;
+      border-radius:16px;
+      background:var(--gray);
+    }
+    .card.green{background:var(--green)}
+    .process{
+      padding:64px;
+    }
+    .step{
+      padding:20px;
+      border:1px solid #ddd;
+      border-radius:12px;
+      margin-bottom:16px;
+    }
+    footer{
+      background:#000;
+      color:#fff;
+      padding:48px 64px;
+    }
+    footer input{
+      padding:12px;
+      border-radius:6px;
+      border:none;
+      width:240px;
+    }
+    footer button{
+      padding:12px 18px;
+      border:none;
+      background:var(--green);
+      font-weight:600;
+      border-radius:6px;
+      margin-left:8px;
+      cursor:pointer;
+    }
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      header{flex-direction:column;gap:16px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>Positivus</strong>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Navigating the digital landscape for success</h1>
+    <p>We help businesses grow through SEO, paid ads, content marketing, and analytics-driven strategies.</p>
+    <br>
+    <a class="btn" href="#contact">Book a consultation</a>
+  </div>
+  <div>
+    <img src="https://dummyimage.com/500x400/000/b9ff66&text=Illustration" alt="illustration" style="width:100%;border-radius:16px">
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>Services</h2>
+  <div class="service-grid">
+    <div class="card green"><h3>SEO</h3><p>Improve visibility and rankings.</p></div>
+    <div class="card"><h3>PPC Advertising</h3><p>Targeted ads that convert.</p></div>
+    <div class="card"><h3>Social Media</h3><p>Grow your brand presence.</p></div>
+    <div class="card green"><h3>Email Marketing</h3><p>Engage and retain customers.</p></div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <h2>Our Working Process</h2>
+  <div class="step">01 – Consultation</div>
+  <div class="step">02 – Research & Strategy</div>
+  <div class="step">03 – Implementation</div>
+  <div class="step">04 – Monitoring & Optimization</div>
+  <div class="step">05 – Reporting</div>
+</section>
+
+<footer id="contact">
+  <h2>Contact Us</h2>
+  <p>Let’s make things happen.</p><br>
+  <input type="email" placeholder="Your email">
+  <button>Subscribe</button>
+</footer>
+
+</body>
+</html>
